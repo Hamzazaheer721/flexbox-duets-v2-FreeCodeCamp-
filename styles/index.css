@@ -32,9 +32,23 @@
 
 /* giving flex:2 will make a specific flex child take 2x times more space  */
 
-.home {
-  flex: 2
+/* Lecture# 3  */
+
+/* flex basis will decide the width of the div if its flex direction is row */
+/* if the size of the container is 800 and we give 400 basis to 2 flex children */
+/* then empty space to the right will be remaining in the container */
+/* setting flex-grow:1 for each flex children will make both equally take that empty space */
+/* setting flex-grow to each of one will make one take all the remaining space */
+/* default value of flex is flex: 1 1 0  <=> flex: 1*/
+/* flex grow, flex shrink, flex basis */
+.home{
+  flex-basis: 200px;
+  flex-grow:1;
 }
+.search{
+  flex-basis: 200px;
+}
+
 .logout{
-  flex: 1;
+  flex-basis: 200px;
 }
