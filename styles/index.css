@@ -1,8 +1,25 @@
 .container{
   border: 5px solid #423423;
   display: flex;
+  height: 300px;
 }
 
+/*if you apply automargins to flex items, it will automatically adjust its specified margin to occupy the extra space in */
+/* in flex container, depending upon the direction in which this auto margin has been applied */
+
+/* what this means is that setting the margin property on flex child will push the child away from that direction */
+/* seting the margin-left: auto will push the child to most right side */
+/* settting the margin-top: auto will push the child to the bottom */
+/* sometimes justify-self and align-self may not give the best position then it would work for you */
 .home {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.search{
+  margin: auto;
+}
+
+.logout{
   margin: auto;
 }
