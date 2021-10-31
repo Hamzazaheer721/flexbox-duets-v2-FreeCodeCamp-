@@ -4,6 +4,7 @@
   height: 300px;
 }
 
+/* Lecture# 1 */
 /*if you apply automargins to flex items, it will automatically adjust its specified margin to occupy the extra space in */
 /* in flex container, depending upon the direction in which this auto margin has been applied */
 
@@ -11,15 +12,29 @@
 /* seting the margin-left: auto will push the child to most right side */
 /* settting the margin-top: auto will push the child to the bottom */
 /* sometimes justify-self and align-self may not give the best position then it would work for you */
-.home {
-  margin-left: auto;
-  margin-top: auto;
+.home{
+  background-color: bisque;
 }
-
 .search{
-  margin: auto;
+  background-color: aqua;
 }
 
 .logout{
-  margin: auto;
+  background-color: aquamarine;
+}
+
+/* Lecture# 2 */
+/* if you want to make flexbox responsive then you'll have to given flex property to each of the child */
+/* giving flex 1 to all the child will make flex do maths for you and give equal widths to the containers */
+/* .container > div{
+  flex: 1
+} */
+
+/* giving flex:2 will make a specific flex child take 2x times more space  */
+
+.home {
+  flex: 2
+}
+.logout{
+  flex: 1;
 }
