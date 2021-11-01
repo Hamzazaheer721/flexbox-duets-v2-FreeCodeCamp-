@@ -1,7 +1,10 @@
-.container{
+.container {
   border: 5px solid #423423;
   display: flex;
-  height: 300px;
+  min-height: 30px;
+  height: auto;
+  padding: 20px;
+  background-color: bisque;
 }
 
 /* Lecture# 1 */
@@ -12,7 +15,7 @@
 /* seting the margin-left: auto will push the child to most right side */
 /* settting the margin-top: auto will push the child to the bottom */
 /* sometimes justify-self and align-self may not give the best position then it would work for you */
-.home{
+/* .home{
   background-color: bisque;
 }
 .search{
@@ -21,7 +24,7 @@
 
 .logout{
   background-color: aquamarine;
-}
+} */
 
 /* Lecture# 2 */
 /* if you want to make flexbox responsive then you'll have to given flex property to each of the child */
@@ -42,8 +45,6 @@
 /* default value of flex is flex: 1 1 0  <=> flex: 1*/
 /* flex grow, flex shrink, flex basis */
 
-
-
 /* Lecture# 4 */
 /* Flex shrink will first wait for the flex-basis to reach then if the width gets smaller than flex-basis */
 /* it will decide how a flex child will shrink comparatively */
@@ -51,7 +52,7 @@
 /* Lecuture# 5 we can change the order of flex children by order property, the more the order the more it is pushed to the end */
 /* By default order is 0 */
 /* since order=-1 is smaller than 0 so it will put the item to the most left side */
-.home{
+/* .home{
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 200px;
@@ -66,5 +67,54 @@
 
 .logout{
   flex: 1 1 200px;
+} */
+
+/* Lecture# 6 making a responsive navbar with flexbox */
+.search-input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  background: transparent;
+  width: 100%;
 }
 
+.logout {
+  text-align: right;
+}
+
+.container > li {
+  list-style-type: none;
+  flex: 1;
+}
+
+.flex-input {
+  flex: 3 !important;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .container > li {
+    flex: 1 1 50%;
+  }
+  .search-input {
+    text-align: center;
+  }
+  .flex-input {
+    flex: 1 1 50% !important;
+  }
+  .logout {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .container > li {
+    flex: 1 1 100%;
+  }
+  .flex-input {
+    flex: 1 1 100% !important;
+  }
+}
