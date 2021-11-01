@@ -41,15 +41,23 @@
 /* setting flex-grow to each of one will make one take all the remaining space */
 /* default value of flex is flex: 1 1 0  <=> flex: 1*/
 /* flex grow, flex shrink, flex basis */
+
+
+
+/* Lecture# 4 */
+/* Flex shrink will first wait for the flex-basis to reach then if the width gets smaller than flex-basis */
+/* it will decide how a flex child will shrink comparatively */
 .home{
-  flex: 10%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
 }
 .search{
   flex-basis: 200px;
-  flex: 80%;
+  flex-grow: 8;
+  flex-shrink: 2;
 }
 
 .logout{
-  flex-basis: 200px;
-  flex: 10%;
+  flex: 1 1 200px;
 }
