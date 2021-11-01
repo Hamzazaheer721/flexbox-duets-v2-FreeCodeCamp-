@@ -47,17 +47,24 @@
 /* Lecture# 4 */
 /* Flex shrink will first wait for the flex-basis to reach then if the width gets smaller than flex-basis */
 /* it will decide how a flex child will shrink comparatively */
+
+/* Lecuture# 5 we can change the order of flex children by order property, the more the order the more it is pushed to the end */
+/* By default order is 0 */
+/* since order=-1 is smaller than 0 so it will put the item to the most left side */
 .home{
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 200px;
+  order: 1;
 }
 .search{
   flex-basis: 200px;
   flex-grow: 8;
   flex-shrink: 2;
+  order: -1;
 }
 
 .logout{
   flex: 1 1 200px;
 }
+
