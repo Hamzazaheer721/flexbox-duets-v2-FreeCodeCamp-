@@ -1,3 +1,7 @@
+Live demo of end result is as follows: 
+https://flexboxtutorialbyhamza.netlify.app/
+
+
 Lecture# 1
 if you apply automargins to flex items, it will automatically adjust its specified margin to occupy the extra space in
 in flex container, depending upon the direction in which this auto margin has been applied
