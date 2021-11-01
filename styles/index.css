@@ -42,13 +42,14 @@
 /* default value of flex is flex: 1 1 0  <=> flex: 1*/
 /* flex grow, flex shrink, flex basis */
 .home{
-  flex-basis: 200px;
-  flex-grow:1;
+  flex: 10%;
 }
 .search{
   flex-basis: 200px;
+  flex: 80%;
 }
 
 .logout{
   flex-basis: 200px;
+  flex: 10%;
 }
